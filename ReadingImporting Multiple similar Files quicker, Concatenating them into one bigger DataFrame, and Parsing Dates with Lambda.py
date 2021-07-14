@@ -91,7 +91,7 @@ entrances = pd.concat(n, ignore_index = True)
 #Create blank list for Clearances
 m = []
 
-#Using loop, read every Clearance file in cucc then append each dataframe to list "n"
+#Using loop, read every Clearance file in cucc then append each dataframe to list "m"
 for thing in cucc:
     y = pd.read_csv(thing, delimiter = "|", parse_dates = ["Update Date/Time", "Create Date/Time", "Clearance Date/Time"], date_parser = parser, dtype = {"Filing Port" : str, "Sequence" : str, "Arrival Port" : str, "Agent Name" : str, "Cargo Type Code" : str, "Last Domestic Port" : str, "Last Foreign Port" : str, "Via Port" : str, "Vessel Repair" : str, "Vessel Name" : str, "IMO" : str, "Call Sign Number" : str, "Official Registration Number" : str, "Built Country Code" : str, "Vessel Type" : str, "USCS Code" : str, "Owner Name" : str, "Operator Name" : str, "Operator Country Code" : str, "Registration Country Code" : str, "Clearance Date/Time" : str, "Create Date Time" : str, "Update Date/Time" : str})
     m.append(y)
