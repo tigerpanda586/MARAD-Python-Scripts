@@ -68,7 +68,8 @@ n = 25
 #"[:n]" slices for first 25 -- ".index.tolist()" makes the port codes into a list
 ports25 = entrances['Arrival Port Code'].value_counts()[:n].index.tolist()   
 
-#Make list into a numpy array -- a numpy array is just a list but put into a form...
+#Make list into a numpy array -- a numpy array is a list that can have multiple..
+#dimensions kind of like a dictionary but more complex..
 #that's easier manipulated by packages like numpy and pandas -- it's an array
 ports25 = np.array(ports25)
 
