@@ -3,7 +3,9 @@
 Created on Mon Jun 21 10:24:48 2021
 
 @author: Jessica Brown
-@email: TreePerson586@yahoo.com
+@position: Economics Intern at MARAD 06/2021 - 07/2021
+@personal email: TreePerson586@yahoo.com
+@school email: Jessica.Marie.Brown@live.mercer.edu
 """
 
 #Import Pckg
