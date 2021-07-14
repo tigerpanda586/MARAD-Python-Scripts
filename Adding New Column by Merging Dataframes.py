@@ -91,7 +91,7 @@ del portname["District/Port"]
 
 #Merge portname dataframe with entrances
 #"on" argument merges dataframe by matching values in specified column
-#"how" argument ensures all data in "left" dataframe in this instance is retained, and the only "right" data that eill appear is thr "right" data that matches "left" data
+#"how" argument ensures all data in "left" dataframe in this instance is retained, and the only "right" data that will appear is the "right" data that matches "left" data
 #left is the dataframe before ".merge", and right dataframe is one inside () 
 #validate = many_to_one here says that many values from "left" dataframe correspond to one value from "right" dataframe
 entrances = entrances.merge(portname, on = "Arrival Port Code", how = "left", validate = "many_to_one")
